@@ -1,11 +1,16 @@
 .additives-bonus {
   background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat_bonus.png");
   background-repeat: no-repeat;
-  background-size: 280px 290px;
-  display: block;
+  background-size: 100% 290px, 280px 290px;
   padding: 187px 61px 43px 58px;
-  margin-top: 36px;
+  background-position: top center;
   margin-bottom: 35px;
+  display: block;
+}
+
+.additives-bonus__inner {
+  color: $white;
+  text-align: center;
 }
 
 .additives-bonus__text {
@@ -13,8 +18,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  color: $primaryColor;
   margin: 0;
   padding: 0;
 }

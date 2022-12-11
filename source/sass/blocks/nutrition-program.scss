@@ -1,15 +1,14 @@
 .nutrition-program {
   background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat.jpg");
   background-repeat: no-repeat;
-  background-size: 320px 302px;
+  background-size: 100% 302px, 320px 302px;
+  background-position: top center;
   display: block;
 }
 
 .nutrition-program__inner {
-  color: #ffffff;
+  color: $white;
   text-align: center;
-  width: 320px;
-  height: 302px;
 }
 
 .nutrition-program__heading {
