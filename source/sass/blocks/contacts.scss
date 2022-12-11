@@ -1,6 +1,10 @@
 .contacts {
   display: flex;
   padding: 26px 20px;
+
+  &--background {
+    background-color: $primaryColor;
+  }
 }
 
 .contacts__title {

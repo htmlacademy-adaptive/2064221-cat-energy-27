@@ -5,11 +5,11 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__body container">
     <header class="main-header">
-      <a class="logo">
-        <img class="main-header__cat-logo" src="../source/img/logo_mobile.svg" width="34" height="38" alt="логотип cat energy">
-        <img class="main-header__logo-image main-header__logo-image--center" src="../source/img/cat_energy.svg" width="101" height="18" alt="cat energy">
+      <a class="logo" href="index.html">
+        <img class="main-header__cat-logo" src="./img/logo_mobile.svg" width="34" height="38" alt="логотип cat energy">
+        <img class="main-header__logo-image main-header__logo-image--center" src="./img/cat_energy.svg" width="101" height="18" alt="cat energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -17,7 +17,7 @@
         </button>
         </nav>
     </header>
-    <main class="main-form">
+    <main class="main-form container">
     <section class="program-selection">
       <h1 class="program-selection__title">Подбор программы</h1>
       <p class="program-selection__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
@@ -46,7 +46,7 @@
             </li>
             <li class="choise-program__item">
               <label class="control">
-                <input class="control__input control__input--no-savvy" type="radio" name="no savvy" value="no savvy">Не знаю (нужен ва совет)
+                <input class="control__input control__input--no-savvy" type="radio" name="no savvy" value="no savvy">Не знаю (нужен ваш совет)
               </label>
               </li>
           </ul>
@@ -54,8 +54,8 @@
       </div>
     </section>
           <section class="contact-details">
-            <h2 class="contact-details__title contact-details__title--line">Контактные данные (владельца кота)</h2>
-            <div class="contact-wrapper contact-wrapper--modificat">
+            <h2 class="contact-details__title contact-details__title--line title">Контактные данные (владельца кота)</h2>
+            <div class="contact-details__wrapper contact-details__wrapper--modificat">
             <form class="contact-details__personal" action="/">
               <label class="details" for="email">e-mail:<sup>*</sup></label>
               <input class="contact-details__email contact-details__email--envelope" type="text" name="email" placeholder="kuklachev@gmail.com" id="email">
@@ -65,12 +65,12 @@
           </div>
           </section>
           <section class="comment">
-            <h3 class="comment__title comment__title--line">Комментарий</h3>
+            <h3 class="comment__title comment__title--line title">Комментарий</h3>
             <p class="comment__text">Расскажите обо всех повадках кота</p>
           </section>
           <section class="additionally">
           <fieldset class="additionally__wrapper">
-            <legend class="additionally__title additionally__title--line">Дополнительно</legend>
+            <legend class="additionally__title additionally__title--line title">Дополнительно</legend>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <label class="compound">
@@ -98,13 +98,11 @@
               </li>
             </ul>
           </fieldset>
-          <button class="additionally__send additionally__send--button" type="button">Отправить заявку</button>
-          <small class="additionally__legend">
-            <sup>*</sup> — Обязательные поля
-          </small>
+          <button class="additionally__send button button--primary" type="submit">Отправить заявку</button>
+          <small class="additionally__legend">*— Обязательные поля</small>
           </section>
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer container">
           <div class="main-footer__wrapper">
             <div class="main-footer__contacts contacts main-footer__contacts--center">
               <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
@@ -114,7 +112,7 @@
               <iframe></iframe>
             </div>
             <a class="logo">
-              <img class="main-footer__logo-image" src="../source/img/cat_energy.svg" width="128" height="24" alt="логотип">
+              <img class="main-footer__logo-image" src="../img/cat_energy.svg" width="128" height="24" alt="логотип">
             </a>
             <div class="main-footer__social social">
               <h2 class="visually-hidden">Давайте дружить.</h2>

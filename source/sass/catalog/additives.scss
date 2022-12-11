@@ -1,14 +1,15 @@
-.additives__wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.additives {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 20px;
 }
 
 .additives__title {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .additives__description {

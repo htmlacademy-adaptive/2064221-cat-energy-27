@@ -1,0 +1,15 @@
+.button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button--primary {
+  background-color: $green;
+  color: $primaryColor;
+  padding: 8px 84px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

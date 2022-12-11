@@ -1,0 +1,18 @@
+.contact-details {
+  padding-left: 20px;
+}
+
+.contact-details__title {
+  margin-bottom: 35px;
+}
+
+.contact-details__personal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 18px;
+  color: $darkgrey;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
