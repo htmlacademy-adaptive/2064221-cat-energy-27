@@ -1,0 +1,31 @@
+.selection {
+  padding-top: 198px;
+}
+
+.selection-program {
+  background-color: $lightgrey;
+  margin: 20px;
+  padding: 20px;
+}
+
+.selection-program__heading {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.selection-program__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkgrey;
+  padding-bottom: 42px;
+}
+
+.selection-program__catalog {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

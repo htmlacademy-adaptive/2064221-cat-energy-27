@@ -1,0 +1,10 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+
+  &__image-slim {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
