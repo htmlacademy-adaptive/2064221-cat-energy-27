@@ -1,7 +1,32 @@
+.main-nav {
+  justify-content: space-between;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.main-nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px 17px;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 34px;
+  }
 }
 
 .main-nav__list a {

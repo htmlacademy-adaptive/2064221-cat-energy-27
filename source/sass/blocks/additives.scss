@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 20px;
-  margin-bottom: 19px;
+  padding: 25px 0 35px 0;
+}
+
+.additives__wrapper {
+  padding-bottom: 35px;
 }
 
 .additives__title {
@@ -11,6 +14,26 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  border-bottom: 1px solid #cdcdcd;
+  margin: 0;
+  padding: 0 20px 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    border: none;
+    padding-bottom: 80px;
+  }
+}
+
+.additives__list {
+  border-bottom: 1px solid #cdcdcd;
+  padding: 13px 20px 19px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+    border-bottom: 0;
+  }
 }
 
 .additives__description {
@@ -22,14 +45,26 @@
   color: #222222;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
-  margin-bottom: 36px;
+  margin-top: 13px;
+  margin-bottom: 10px;
 }
 
 .additives__name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   color: #444444;
+  margin: 0;
+}
+
+.additives__order {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 20px;
 }

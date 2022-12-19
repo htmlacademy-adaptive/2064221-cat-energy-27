@@ -1,7 +1,11 @@
+.advantage__wrapper {
+  padding: 0 20px 22px;
+}
+
 .advantage__description {
   font-size: 36px;
   line-height: 40px;
-  padding: 0;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
 
@@ -9,6 +13,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+}
+
+.advantage__item {
+  padding-bottom: 20px;
 }
 
 .advantage__list {
@@ -35,7 +43,6 @@
   line-height: 18px;
   margin: 0;
   padding: 0;
-  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
