@@ -1,0 +1,29 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: #000000;
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 980px;
+    padding-left: 530px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
