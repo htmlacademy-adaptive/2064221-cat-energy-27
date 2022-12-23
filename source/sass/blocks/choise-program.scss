@@ -1,7 +1,32 @@
 .choise-program {
+  border: none;
+  padding: 0;
+}
+
+.choise-program__wrapper {
+  padding: 10px 20px 24px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 67px 51px 70px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.choise-program__list {
   margin: 0;
   padding: 0;
   border: none;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 30px 29px;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .choise-program__item {
@@ -10,4 +35,13 @@
   text-transform: uppercase;
   color: #222222;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.choise-program__item:last-child {
+  margin-bottom: 0;
 }

@@ -7,6 +7,18 @@
 
 .additives__wrapper {
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px 35px;
+  }
+}
+
+.additives__wrapper-desktop {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .additives__title {
@@ -31,8 +43,18 @@
   padding: 13px 20px 19px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border: 1px solid #cdcdcd;
     border-bottom: 0;
+  }
+}
+
+.additives__list:last-child {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -59,6 +81,10 @@
   font-weight: 400;
   color: #444444;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
 }
 
 .additives__order {

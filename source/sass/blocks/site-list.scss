@@ -5,13 +5,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    min-width: 470px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: 720px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -26,5 +24,11 @@
 
   @media (min-width: $desktop-width) {
     color: $white;
+  }
+}
+
+.site-list__item--current a {
+  @media (min-width: $desktop-width) {
+    color: #111111;
   }
 }

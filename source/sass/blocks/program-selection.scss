@@ -1,15 +1,51 @@
 .program-selection {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  margin: 20px;
+}
+
+.program-selection__paragraf-wrapper {
+  padding: 27px 20px 29px;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 67px 56px 70px;
+    border: none;
+  }
+}
+
+.program-selection__box {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 10px 110px 55px;
+  }
+}
+
+.program-selection__questionnaire {
+  padding: 10px 20px 24px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 67px 42px 70px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
-  margin-top: 27px;
-  margin-bottom: 37px;
+  margin: 0 0 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-selection__text {
@@ -18,7 +54,12 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    font-size: 19px;
+    line-height: 30px;
+  }
 }
 
 .program-selection__form {

@@ -92,6 +92,7 @@
 
 .achievements__inner {
   padding: 27px 0 31px 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 43px 30px 0;
