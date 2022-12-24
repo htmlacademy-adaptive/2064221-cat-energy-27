@@ -1,5 +1,14 @@
+.main-footer {
+  position: relative;
+}
+
 .main-footer__container {
   background-color: $lightgrey;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .main-footer__top {
@@ -13,13 +22,16 @@
     padding: 50px 30px 61px;
     box-sizing: border-box;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px 58px;
+  }
 }
 
 .main-footer__logo {
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 192px;
     margin-bottom: 0;
     padding-top: 10px;
     text-align: left;
@@ -50,12 +62,22 @@
 }
 
 .main-footer__contacts {
-  &--background {
-    background-color: $lightgrey;
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+    height: 400px;
   }
+}
 
-  &--form {
-    background-color: $lightgrey;
+.main-footer__map {
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
   }
 }
 
