@@ -3,13 +3,8 @@
   font-weight: 400;
   text-transform: uppercase;
   border: none;
-}
-
-.button--primary {
+  display: block;
+  cursor: pointer;
   background-color: $green;
   color: $white;
-  padding: 8px 84px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
 }

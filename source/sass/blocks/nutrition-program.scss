@@ -3,7 +3,31 @@
   background-repeat: no-repeat;
   background-size: 100% 302px, 320px 302px;
   background-position: top center;
-  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    background-image: none;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      top: 0;
+      left: 50%;
+      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
 }
 
 .nutrition-program__inner {
@@ -11,25 +35,55 @@
   text-align: center;
 }
 
+.nutrition-program__wrapper {
+  position: relative;
+  padding: 37px 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .nutrition-program__heading {
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding: 27px 23px 20px 26px;
+  padding: 27px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 87px;
+  }
 }
 
 .nutrition-program__text {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  padding: 0;
+  padding: 5px 0 28px;
   margin: 0;
-  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 9px;
+    padding-left: 88px;
+  }
 }
 
 .nutrition-program__link {
-  padding: 8px 44px;
-  background-color: #68b738;
+  padding-top: 11px;
+  background-color: $green;
   font-size: 14px;
   line-height: 18px;
+  color: $white;
+  height: 29px;
+  text-decoration: none;
 }
