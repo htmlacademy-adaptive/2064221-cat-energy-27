@@ -16,9 +16,9 @@
 .achievements__title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -53,6 +53,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,13 +61,32 @@
   }
 }
 
-.achievements__total {
+.achievements__costs {
+  display: flex;
+  text-align: center;
+  padding-top: 34px;
+  margin: 0 46px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-left: 0;
+    padding-top: 55px;
+  }
+}
+
+.achievements__total,
+.achievements__value {
   margin: 0;
-  padding: 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -75,9 +95,13 @@
   }
 }
 
-.achievements__wrapper {
-  padding: 0 20px;
+.achievements__total {
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
 
+.achievements__wrapper {
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
   }
@@ -91,7 +115,7 @@
 }
 
 .achievements__inner {
-  padding: 27px 0 31px 0;
+  padding: 27px 20px 31px 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -102,16 +126,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
-
-.achievements__costs {
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    text-align: right;
-    width: 185px;
-    padding-top: 11px;
-    padding-left: 167px;
+    padding: 0 110px;
   }
 }

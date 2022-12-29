@@ -1,5 +1,14 @@
 .advantage__wrapper {
   padding: 0 20px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 110px 10px;
+    border: 0;
+  }
 }
 
 .advantage__description {
