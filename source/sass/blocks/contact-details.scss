@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 20px 67px 35px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 110px 39px;
+  }
 }
 
 
@@ -23,7 +27,7 @@
   }
 }
 
-.contact-details__personal {
+.contact-details__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -31,10 +35,8 @@
   line-height: 18px;
   color: $darkgrey;
   text-transform: uppercase;
-  margin-bottom: 24px;
 
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
   }
 }
@@ -47,12 +49,10 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 50%;
-    margin-bottom: 24px;
   }
 }
 
-.contact-details__email,
-.contact-details__mobail {
+.contact-details__input {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;

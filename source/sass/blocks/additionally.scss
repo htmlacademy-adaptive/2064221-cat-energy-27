@@ -5,7 +5,7 @@
 .additionally__wrapper {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 13px 20px 21px;
 
   @media (min-width: $tablet-width) {
     padding: 30px 67px 0 70px;
@@ -22,12 +22,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  padding: 13px 20px 21px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
   }
 }
 
@@ -54,7 +52,7 @@
 
 .additionally__title {
   margin: 0;
-  padding: 13px 20px 20px;
+  padding: 13px 20px 62px 20px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -105,4 +103,34 @@
     font-size: 20px;
     line-height: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin: 0 81px 0 0;
+  }
+}
+
+.additionally__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.additionally__label::before {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: -46px;
+  border: 1px solid #cdcdcd;
+  content: "";
+}
+
+.additionally__input:checked + .additionally__label::after {
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 18px;
+  height: 14px;
+  background: url("../../img/check.svg");
+  content: "";
 }

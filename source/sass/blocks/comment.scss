@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 30px 67px 35px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 110px 39px;
+  }
 }
 
 .comment__area {
