@@ -1,7 +1,7 @@
 .additives-bonus {
   background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/background_cat_bonus.png");
   background-repeat: no-repeat;
-  background-size: 280px 290px, 280px 290px;
+  background-size: cover;
   background-position: top center;
   display: block;
 }
@@ -9,6 +9,25 @@
 .additives-bonus__inner {
   color: $white;
   text-align: center;
+
+  &::before {
+    display: block;
+    width: 78px;
+    height: 80px;
+    background: url("../../img/bonus_icon_gif.svg");
+    content: "";
+    margin: 0 auto 48px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .additives-bonus__text {
@@ -16,7 +35,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin: 0;
-  padding: 187px 0 43px 0;
-  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+  }
 }
