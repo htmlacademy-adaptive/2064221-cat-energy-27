@@ -162,7 +162,7 @@
   content: "";
 }
 
-.additionally__input:checked+.additionally__label::after {
+.additionally__input:checked + .additionally__label::after {
   position: absolute;
   top: 5px;
   left: -40px;

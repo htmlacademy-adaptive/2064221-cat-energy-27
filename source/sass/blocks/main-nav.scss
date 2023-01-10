@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-items: center;
   padding: 11px 20px 17px;
 
   @media (min-width: $tablet-width) {
@@ -59,14 +58,14 @@
   width: 24px;
   height: 18px;
   background-color: $white;
-  background-image: url("../../img/toggle_closed.svg");
+  background-image: url("../img/toggle_closed.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-     display: none;
-   }
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -74,7 +73,7 @@
   height: 20px;
   margin: 3px;
   background-color: $white;
-  background-image: url("../../img/toggle_open.svg");
+  background-image: url("../img/toggle_open.svg");
   background-repeat: no-repeat;
   border: 0;
   cursor: pointer;

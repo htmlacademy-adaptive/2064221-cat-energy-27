@@ -1,9 +1,9 @@
 .options__wrapper {
   @media (min-width: $tablet-width) {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 84px;
-  padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 84px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
