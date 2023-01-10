@@ -38,7 +38,7 @@
           <li class="site-list__item">
             <a href="catalog.html"> Каталог продукции </a>
           </li>
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item site-list__item--current site-list__item--choise">
             <a href="form.html"> Подбор программы </a>
           </li>
         </ul>
@@ -100,25 +100,25 @@
     <section class="contact-details container">
       <div class="contact-details__box">
         <h2 class="contact-details__title">
-          Контактные данные (владельца кота)
+          <span class="contact-details__background">Контактные данные (владельца кота)</span>
         </h2>
         <div class="contact-details__wrapper">
-            <div class="contact-details__paragraf-box">
-              <label class="contact-details__label" for="email">e-mail:<sup>*</sup></label>
-              <input class="contact-details__input" id="email" type="email" name="email"
-                placeholder="kuklachev@gmail.com" required>
-            </div>
-            <div class="contact-details__paragraf-box">
-              <label class="contact-details__label" for="phone">телефон:<sup>*</sup></label>
-              <input class="contact-details__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
-                required>
-            </div>
+          <div class="contact-details__paragraf-box">
+            <label class="contact-details__label" for="email">e-mail:<sup>*</sup></label>
+            <input class="contact-details__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com"
+              required>
+          </div>
+          <div class="contact-details__paragraf-box">
+            <label class="contact-details__label" for="phone">телефон:<sup>*</sup></label>
+            <input class="contact-details__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
+              required>
+          </div>
         </div>
       </div>
     </section>
     <section class="comment container">
       <div class="comment__container">
-        <h3 class="comment__title">Комментарий</h3>
+        <h3 class="comment__title"><span class="comment__background">Комментарий</span></h3>
         <div class="comment__area">
           <textarea class="comment__area-text" id="text" name="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -130,7 +130,7 @@
         <legend class="visually-hidden">
           Дополнительные товары. Не обязательные для выбораю
         </legend>
-        <h2 class="additionally__title">Дополнительно</h2>
+        <h2 class="additionally__title"><span class="additionally__background">Дополнительно</span></h2>
         <ul class="additionally__list">
           <li class="additionally__item">
             <input class="visually-hidden additionally__input" type="checkbox" name="other" id="sweeteners"

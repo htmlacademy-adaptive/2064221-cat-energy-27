@@ -52,8 +52,16 @@
       left: 0;
       height: 3px;
       background: $green;
+
+      @media (min-width: $desktop-width) {
+        background: $white;
+      }
     }
   }
+}
+
+.site-list__item--choise::after {
+  background: $green;
 }
 
 .site-list__item a {
