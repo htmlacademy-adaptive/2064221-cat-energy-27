@@ -67,7 +67,12 @@
 
   @media (min-width: $desktop-width) {
     background-color: $white;
-    padding: 56px 80px 50px 80px;
-    width: 565px;
+    padding: 60px 60px 56px 80px;
+    width: 425px;
   }
+}
+
+.contacts iframe {
+  border: none;
+  display: block;
 }

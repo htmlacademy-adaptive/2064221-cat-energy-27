@@ -5,7 +5,7 @@
 .additionally__wrapper {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 13px 20px 21px;
 
   @media (min-width: $tablet-width) {
     padding: 30px 67px 0 70px;
@@ -22,12 +22,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  padding: 13px 20px 21px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
   }
 }
 
@@ -53,8 +51,9 @@
 }
 
 .additionally__title {
+  position: relative;
   margin: 0;
-  padding: 13px 20px 20px;
+  padding: 0 20px 62px 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -64,6 +63,42 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.additionally__title::before {
+  position: absolute;
+  z-index: -1;
+  height: 2px;
+  background-color: #68b738;
+  content: "";
+  top: 16px;
+  left: 0;
+  right: -20px;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: -70px;
+    right: -67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -110px;
+    right: -110px;
+  }
+}
+
+.additionally__background {
+  display: inline-block;
+  padding-right: 23px;
+  background-color: $white;
+  width: 141px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-inline: 40px 41px;
+    position: absolute;
+    left: -40px;
   }
 }
 
@@ -105,4 +140,34 @@
     font-size: 20px;
     line-height: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin: 0 81px 0 0;
+  }
+}
+
+.additionally__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.additionally__label::before {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: -46px;
+  border: 1px solid #cdcdcd;
+  content: "";
+}
+
+.additionally__input:checked + .additionally__label::after {
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 18px;
+  height: 14px;
+  background: url("../../img/check.svg");
+  content: "";
 }

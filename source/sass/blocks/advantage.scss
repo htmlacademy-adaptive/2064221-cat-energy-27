@@ -1,5 +1,14 @@
 .advantage__wrapper {
   padding: 0 20px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 110px 10px;
+    border: 0;
+  }
 }
 
 .advantage__description {
@@ -16,17 +25,76 @@
 }
 
 .advantage__item {
-  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+    height: 280px;
+  }
+}
+
+.advantage__item::before {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin: 40px 0 31px;
+  }
+}
+
+.advantage__item--healthy::before {
+  background-image: url("../../img/healthy.svg");
+}
+
+.advantage__item--cooking::before {
+  background-image: url("../../img/cooking.svg");
+}
+
+.advantage__item--food::before {
+  background-image: url("../../img/food.svg");
+}
+
+.advantage__item--time::before {
+  background-image: url("../../img/time.svg");
+}
+
+.advantage__item::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    font-weight: 400;
+    color: #f2f2f2;
+    counter-increment: advantage;
+    content: counter(advantage);
+  }
 }
 
 .advantage__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: advantage;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 247px 247px;
+    gap: 37px 136px;
+    margin-right: 74px;
   }
 
   @media (min-width: $desktop-width) {

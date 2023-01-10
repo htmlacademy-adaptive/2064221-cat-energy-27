@@ -5,10 +5,15 @@
   @media (min-width: $tablet-width) {
     padding: 20px 67px 35px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 110px 39px;
+  }
 }
 
 
 .contact-details__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -23,7 +28,43 @@
   }
 }
 
-.contact-details__personal {
+.contact-details__title::before {
+  position: absolute;
+  z-index: -1;
+  height: 2px;
+  background-color: #68b738;
+  content: "";
+  top: 16px;
+  left: 0;
+  right: -20px;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: -70px;
+    right: -65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -110px;
+    right: -110px;
+  }
+}
+
+.contact-details__background {
+  display: inline-block;
+  padding-right: 15px;
+  background-color: $white;
+  width: 187px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-inline: 39px 42px;
+    position: absolute;
+    left: -40px;
+  }
+}
+
+.contact-details__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -31,10 +72,8 @@
   line-height: 18px;
   color: $darkgrey;
   text-transform: uppercase;
-  margin-bottom: 24px;
 
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
   }
 }
@@ -50,8 +89,7 @@
   }
 }
 
-.contact-details__email,
-.contact-details__mobail {
+.contact-details__input {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
