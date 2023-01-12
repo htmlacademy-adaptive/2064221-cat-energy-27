@@ -5,10 +5,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     width: 677px;
     height: 520px;
     margin: 0 auto 113px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -230px auto 113px;
   }
 }
 
@@ -35,6 +38,15 @@
       background-image: url("../img/slim_cat_tablet@2x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/slim_cat_tablet@1x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #f2f2f2 33%, #f2f2f2 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slim_cat_tablet@2x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #f2f2f2 33%, #f2f2f2 100%);
+    }
+  }
 }
 
 .slider__image--fat {
@@ -53,6 +65,15 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/fat_cat_tablet@2x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/fat_cat_tablet@1x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #f2f2f2 33%, #f2f2f2 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/fat_cat_tablet@2x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #f2f2f2 33%, #f2f2f2 100%);
     }
   }
 }
