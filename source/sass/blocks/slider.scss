@@ -1,10 +1,58 @@
 .slider {
   position: relative;
-  overflow: hidden;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
 
-  &__image-slim {
-    position: absolute;
-    top: 0;
-    right: 0;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 677px;
+    height: 520px;
+    margin: 0 auto 113px;
+  }
+}
+
+.slider__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__image--slim {
+  display: block;
+  background-image: url("../img/slim_cat_mobail@1x.png");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slim_cat_mobail@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/slim_cat_tablet@1x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slim_cat_tablet@2x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
+    }
+  }
+}
+
+.slider__image--fat {
+  display: block;
+  background-image: url("../img/fat_cat_mobail@1x.png");
+  background-size: cover;
+  width: 50%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/fat_cat_mobail@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/fat_cat_tablet@1x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/fat_cat_tablet@2x.png"), linear-gradient(#ffffff 0, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
+    }
   }
 }
