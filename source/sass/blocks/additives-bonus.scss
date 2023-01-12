@@ -8,8 +8,17 @@
   padding-bottom: 43px;
   padding-top: 59px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat_bonus@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 30px;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat_bonus_tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat_bonus_tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +28,11 @@
     box-sizing: border-box;
     padding: 56px 42px 42px;
     background-size: cover;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat_bonus_desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) url("../img/background_cat_bonus_desktop@2x.jpg");
+    }
   }
 }
 

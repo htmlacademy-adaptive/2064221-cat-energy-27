@@ -4,6 +4,10 @@
   background-size: 100% 302px, 320px 302px;
   background-position: top center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     width: 768px;
     background-image: none;
@@ -22,10 +26,14 @@
       height: 694px;
       top: 0;
       left: 50%;
-      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat.jpg");
+      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat_desktop.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background_cat_desktop@2x.png");
+      }
     }
   }
 }
@@ -43,10 +51,33 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    background-image: url("../img/index_cat_tablet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    padding-bottom: 570px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index_cat_tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 67px 110px 0;
+    padding: 67px 110px 204px;
+    background-image: url("../img/index_cat_desktop.png");
+    background-position: 62%;
+    background-size: 522px 499px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index_cat_desktop@2x.png");
+    }
+  }
+}
+
+.nutrition-program__image {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -78,25 +109,23 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    padding-top: 9px;
-    padding-left: 88px;
+    padding: 9px 0 49px 88px;
   }
 }
 
 .nutrition-program__link {
-  padding-top: 11px;
   background-color: $green;
   font-size: 14px;
   line-height: 18px;
   color: $white;
   height: 29px;
   text-decoration: none;
+  padding: 14px 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    width: 244px;
-    margin-top: 21px;
-    margin-left: 82px;
+    width: 205px;
+    margin-left: 88px;
   }
 }
