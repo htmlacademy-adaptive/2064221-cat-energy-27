@@ -53,9 +53,11 @@
           </h1>
           <p class="nutrition-program__text">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 768px)" srcset="img/index_cat_tablet.png 1x, img/index_cat_tablet@2x.png 2x"></source>
-          <img class="nutrition-program__image" src="img/index_cat_mobile.png" srcset="img/index_cat_mobile@2x.png"
-            width="280" height="270" alt="Банка функционального питания."></picture>
+            <source media="(min-width: 768px)" srcset="img/index_cat_tablet.png 1x, img/index_cat_tablet@2x.png 2x">
+            </source>
+            <img class="nutrition-program__image" src="img/index_cat_mobile.png" srcset="img/index_cat_mobile@2x.png"
+              width="280" height="270" alt="Банка функционального питания.">
+          </picture>
           <a class="nutrition-program__link button" href="form.html">Подобрать программу</a>
         </div>
       </div>
@@ -72,11 +74,9 @@
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
             сбросить лишний вес.
           </p>
-          <a class="selection-program__catalog" href="#">Каталог slim
-            <svg class="selection-program__catalog-icon" width="32" height="12" viewBox="0 0 32 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#000" stroke-width="2" d="M0 6h18" />
-              <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
+          <a class="selection-program__catalog" href="catalog.html">Каталог slim
+            <svg class="selection-program__catalog-icon" width="32" height="12">
+              <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </a>
         </div>
@@ -89,11 +89,9 @@
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="selection-program__catalog" href="#">Каталог pro
-            <svg class="selection-program__catalog-icon" width="32" height="12" viewBox="0 0 32 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#000" stroke-width="2" d="M0 6h18" />
-              <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
+          <a class="selection-program__catalog" href="catalog.html">Каталог pro
+            <svg class="selection-program__catalog-icon" width="32" height="12">
+              <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </a>
         </div>
@@ -161,10 +159,10 @@
             </div>
           </div>
         </div>
-          <div class="slider">
-            <div class="slider__image slider__image--slim"></div>
-            <div class="slider__image slider__image--fat"></div>
-          </div>
+        <div class="slider">
+          <div class="slider__image slider__image--slim"></div>
+          <div class="slider__image slider__image--fat"></div>
+        </div>
       </div>
     </section>
   </main>

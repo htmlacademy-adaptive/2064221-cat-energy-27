@@ -20,8 +20,8 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo_desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
-          <img class="main-header__cat-logo" src="img/logo_mobile.svg" width="34" height="38"
-            alt="логотип cat energy" />
+            <img class="main-header__cat-logo" src="img/logo_mobile.svg" width="34" height="38"
+              alt="логотип cat energy" />
           </picture>
         </a>
         <img class="main-header__logo-image main-header__logo-image--center" src="img/cat_energy.svg" width="101"
@@ -107,11 +107,17 @@
             <label class="contact-details__label" for="email">e-mail:<sup>*</sup></label>
             <input class="contact-details__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com"
               required>
+              <svg class="contact-details__icon-email">
+              <use xlink:href="img/sprite.svg#email"></use>
+            </svg>
           </div>
           <div class="contact-details__paragraf-box">
             <label class="contact-details__label" for="phone">телефон:<sup>*</sup></label>
             <input class="contact-details__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
               required>
+              <svg class="contact-details__icon-phone">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
           </div>
         </div>
       </div>
