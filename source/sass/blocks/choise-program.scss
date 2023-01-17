@@ -50,6 +50,10 @@
 .choise-program__label {
   position: relative;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .choise-program__label::before {
@@ -61,9 +65,13 @@
   border: 1px solid #cdcdcd;
   border-radius: 50%;
   content: "";
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
-.choise-program__input:checked + .choise-program__label::after {
+.choise-program__input:checked+.choise-program__label::after {
   position: absolute;
   top: 5px;
   left: -38px;
