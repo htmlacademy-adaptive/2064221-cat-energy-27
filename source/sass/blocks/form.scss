@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 52px;
+    height: 49px;
     padding-inline: 18px;
     font-size: 20px;
     line-height: 30px;
@@ -36,8 +36,15 @@
   display: flex;
   align-items: center;
   margin: 0 0 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
+.form__wrapper--after {
+  margin: 0;
+}
 
 .form__name {
   margin-right: 18px;

@@ -54,6 +54,14 @@
   }
 }
 
+.main-nav__wrapper--form {
+  padding: 0 31px 0 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 112px 0 30px;
+  }
+}
+
 .main-nav--closed .main-nav__toggle {
   width: 24px;
   height: 18px;
@@ -62,6 +70,7 @@
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  margin-left: 9px;
 
   @media (min-width: $tablet-width) {
     display: none;

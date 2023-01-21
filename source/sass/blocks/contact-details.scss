@@ -1,9 +1,9 @@
 .contact-details__box {
   margin: 0;
-  padding: 26px 20px 13px;
+  padding: 26px 20px 2px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 67px 35px 70px;
+    padding: 20px 67px 15px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
   margin: 0 0 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 113px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -84,9 +84,14 @@
   align-items: center;
   margin-bottom: 14px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 571px;
+    margin-bottom: 20px;
   }
 }
 
@@ -119,7 +124,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-inline: 21px 60px;
+    padding-inline: 18px 60px;
+    height: 52px;
   }
 }
 
@@ -133,9 +139,10 @@
   color: $darkgrey;
 
   @media (min-width: $tablet-width) {
-    margin-right: 18px;
+    margin-right: 24px;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 4px;
   }
 }
 

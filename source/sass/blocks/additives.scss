@@ -5,7 +5,11 @@
 }
 
 .additives__wrapper {
-  padding-bottom: 35px;
+  padding:0 20px 34px 20px;
+
+  @media (min-width: $tablet-width) {
+   padding-bottom: 70px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -21,17 +25,17 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  margin: 0 20px 36px;
+  margin: 25px 20px 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     border: none;
-    margin: 0 30px 80px;
+    margin: 18px 30px 80px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px 81px 110px;
+    margin: 0 110px 71px 110px;
   }
 }
 
@@ -66,9 +70,9 @@
   }
 }
 
-.additives__list {
+.additives__item {
   border-bottom: 1px solid #cdcdcd;
-  padding: 13px 20px 19px;
+  padding: 13px 0 17px;
 
   &:first-child {
     border-top: 1px solid #cdcdcd;
@@ -81,10 +85,9 @@
     justify-content: space-between;
     border: 1px solid #cdcdcd;
     border-bottom: 0;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-right: 11px;
+    margin-left: 9px;
+    padding: 25px 37px 28px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +113,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
-  margin-bottom: 10px;
+  margin: 0 0 13px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
@@ -154,7 +157,7 @@
 .additives__order {
   width: 100%;
   height: 40px;
-  margin-top: 15px;
+  margin-top: -4px;
   font-size: 16px;
   line-height: 20px;
 
@@ -181,13 +184,29 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 35px;
+    padding: 0 0 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0 86px;
+    padding: 10px 0 83px;
     display: flex;
     margin: 0 110px;
     justify-content: space-between;
+  }
+}
+
+.additives__value {
+   padding-bottom: 18px;
+
+   @media (min-width: $desktop-width) {
+     padding-bottom: 0;
+   }
+}
+
+.additives__price {
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
