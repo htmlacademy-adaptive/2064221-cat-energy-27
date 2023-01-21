@@ -1,8 +1,8 @@
 .selection-program__wrapper {
-  padding: 20px 20px 13px;
+  padding: 20px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 20px;
+    padding: 0 30px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +19,12 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 60px 57px 52px;
+    padding: 67px 60px 57px 52px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 60px 57px 52px;
   }
 }
 
@@ -35,6 +40,11 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+    padding: 0;
+  }
 }
 
 .selection-program__text {
@@ -43,17 +53,19 @@
   line-height: 18px;
   color: $darkgrey;
   margin: 0 0 15px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     border: none;
     font-size: 16px;
     line-height: 24px;
-    width: 378px;
+    width: 342px;
+    padding-bottom: 38px;
 
     @media (min-width: $desktop-width) {
       width: 457px;
+      padding-bottom: 13px;
     }
   }
 }
@@ -97,7 +109,7 @@
     order: 1;
     width: 200px;
     height: 200px;
-    margin: 15px 0 0;
+    margin: 24px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,17 +131,17 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    bottom: 20px;
-    left: 28px;
-    width: 140px;
-    height: 192px;
+    bottom: 15px;
+    left: 30px;
+    width: 138px;
+    height: 193px;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 10px;
-    left: 12px;
+    bottom: 9px;
+    left: 14px;
     width: 70px;
     height: 97px;
   }
@@ -147,7 +159,7 @@
 
   @media (min-width: $tablet-width) {
     bottom: 40px;
-    left: -30px;
+    left: -35px;
     width: 268px;
     height: 112px;
     background-repeat: no-repeat;
@@ -155,8 +167,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 20px;
-    left: -17px;
+    bottom: 24px;
+    left: -20px;
     width: 134px;
     height: 56px;
   }

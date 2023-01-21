@@ -3,7 +3,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 20px;
+  padding: 17px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    text-align: left;
+    padding: 17px 0;
+  }
 }
 
 .copyright__link {
@@ -17,5 +23,5 @@
 .copyright__logo-icon {
   width: 27px;
   height: 34px;
-  margin-left: 20px;
+  padding-left: 29px;
 }
