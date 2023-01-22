@@ -5,10 +5,10 @@
 }
 
 .additives__wrapper {
-  padding:0 20px 34px 20px;
+  padding: 0 20px 34px 20px;
 
   @media (min-width: $tablet-width) {
-   padding-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
 
 .additives__title {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px 71px 110px;
+    margin: 0 110px 71px 73px;
   }
 }
 
@@ -107,7 +107,7 @@
 }
 
 .additives__description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -130,7 +130,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -139,7 +139,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -171,11 +171,12 @@
   }
 }
 
-.additives__price {
-  margin: 0;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 49px;
+.additives__price {
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -196,15 +197,7 @@
 }
 
 .additives__value {
-   padding-bottom: 18px;
-
-   @media (min-width: $desktop-width) {
-     padding-bottom: 0;
-   }
-}
-
-.additives__price {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;

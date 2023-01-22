@@ -79,7 +79,7 @@
   }
 }
 
-.choise-program__input:checked+.choise-program__label::after {
+.choise-program__input:checked + .choise-program__label::after {
   position: absolute;
   top: 5px;
   left: -38px;

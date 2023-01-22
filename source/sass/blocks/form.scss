@@ -1,5 +1,5 @@
 .form__search {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -31,8 +31,7 @@
   }
 }
 
-
-.form__wrapper{
+.form__wrapper {
   display: flex;
   align-items: center;
   margin: 0 0 14px;

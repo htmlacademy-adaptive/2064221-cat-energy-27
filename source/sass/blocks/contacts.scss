@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px 27px;
+  padding: 29px 20px 27px;
   background-color: $lightgrey;
 
   &--inner {
@@ -18,8 +18,20 @@
   }
 }
 
+.contacts--form {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 94px;
+  }
+}
+
 .contacts__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -32,7 +44,7 @@
 }
 
 .contacts__text-wrapper {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $darkgrey;

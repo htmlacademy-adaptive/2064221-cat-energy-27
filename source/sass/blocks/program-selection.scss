@@ -1,5 +1,5 @@
 .program-selection {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
 
@@ -31,7 +31,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 67px 42px 70px;
+    padding: 14px 67px 42px 70px;
     border: none;
   }
 
@@ -51,10 +51,9 @@
     font-size: 60px;
     line-height: 60px;
 
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 58px;
-  }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 58px;
+    }
   }
 }
 

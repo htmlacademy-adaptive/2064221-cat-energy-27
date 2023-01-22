@@ -21,6 +21,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 38px;
   }
 }
 
@@ -110,7 +111,7 @@
 }
 
 .advantage__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   color: $darkgrey;
   font-size: 14px;
@@ -121,5 +122,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
