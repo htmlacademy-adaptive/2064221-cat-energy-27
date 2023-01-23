@@ -169,6 +169,11 @@
 .additionally__label {
   position: relative;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
 }
 
 .additionally__label::before {
