@@ -176,6 +176,13 @@
 
 .selection-program__catalog-icon {
   margin-left: 13px;
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: transform 0;
+
+  &:hover {
+    transform: scaleX(1.4);
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
