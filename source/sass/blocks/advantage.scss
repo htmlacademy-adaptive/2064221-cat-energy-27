@@ -1,12 +1,12 @@
 .advantage__wrapper {
-  padding: 0 20px 22px;
+  padding: 0 20px 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 30px 47px;
+    padding: 17px 30px 47px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 110px 10px;
+    padding: 44px 110px 10px;
     border: 0;
   }
 }
@@ -21,6 +21,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 38px;
   }
 }
 
@@ -40,7 +41,7 @@
   flex-shrink: 0;
   width: 60px;
   height: 60px;
-  margin-right: 20px;
+  margin-right: 21px;
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
@@ -49,7 +50,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    margin: 40px 0 31px;
+    margin: 33px 0 31px;
   }
 }
 
@@ -67,6 +68,12 @@
 
 .advantage__item--time::before {
   background-image: url("../img/time.svg");
+}
+
+.advantage__item--healthy {
+  @media (min-width: $tablet-width) {
+    width: 226px;
+  }
 }
 
 .advantage__item::after {
@@ -99,12 +106,12 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 230px 230px 230px 230px;
-    gap: 78px;
+    gap: 95px;
   }
 }
 
 .advantage__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   color: $darkgrey;
   font-size: 14px;
@@ -115,5 +122,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }

@@ -19,33 +19,63 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px 30px 61px;
+    padding: 40px 30px 48px;
     box-sizing: border-box;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 110px 58px;
+    padding: 52px 110px 47px;
+  }
+}
+
+
+.main-footer__top--form {
+  @media (min-width: $desktop-width) {
+    padding-top: 85px;
+  }
+}
+
+.main-footer__logo-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -41px;
   }
 }
 
 .main-footer__logo {
   text-align: center;
+  padding-top: 18px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding-top: 10px;
     text-align: left;
+    padding: 0;
+    margin-right: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+  }
+}
+
+.main-footer__logo--catalog {
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
   }
 }
 
 .main-footer__logo-link {
   display: inline-block;
-  padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     width: 210px;
-    padding-top: 11px;
+    padding: 0;
   }
 }
 
@@ -56,8 +86,9 @@
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: 0;
     border: none;
+    padding: 0;
   }
 }
 
@@ -65,7 +96,13 @@
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: 1;
-    height: 282px;
+    height: 279px;
+  }
+}
+
+.main-footer__contacts--catalog {
+  @media (min-width: $desktop-width) {
+    height: 280px;
   }
 }
 
@@ -82,7 +119,41 @@
 }
 
 .main-footer__iframe {
+  position: relative;
   width: 100%;
-  height: 400px;
+  height: 362px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 398px;
+  }
+}
+
+.main-footer__iframe-pin {
+  position: absolute;
+  background-image: url("../img/map_pin.svg");
+  display: block;
+  content: "";
+  width: 56px;
+  height: 52px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  left: 134px;
+  top: 253px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map_pin_tablet.svg");
+    width: 113px;
+    height: 106px;
+    left: 333px;
+    top: 343px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map_pin_tablet.svg");
+    width: 113px;
+    height: 106px;
+    left: 909px;
+    top: 131px;
+  }
 }

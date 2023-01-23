@@ -21,6 +21,10 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 61px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 245px;
@@ -72,7 +76,7 @@
 }
 
 .additives-bonus__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

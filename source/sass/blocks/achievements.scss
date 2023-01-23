@@ -3,8 +3,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 680px, #eaeaea 680px, #eaeaea);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 611px, #eaeaea 611px, #eaeaea);
   }
 
   @media (min-width: $desktop-width) {
@@ -17,16 +16,16 @@
   line-height: 40px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 143px;
+    margin-bottom: 146px;
   }
 }
 
@@ -39,7 +38,7 @@
 }
 
 .achievements__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -50,11 +49,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 69px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 68px;
+    width: 432px;
   }
 }
 
@@ -63,12 +63,14 @@
   text-align: center;
   padding-top: 34px;
   margin: 0 46px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: flex-end;
     align-self: center;
-    margin-left: auto;
+    margin: 0 0 0 170px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,14 +88,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
     text-align: start;
   }
 }
 
 .achievements__total {
   @media (min-width: $desktop-width) {
-    margin-right: 63px;
+    margin-right: 66px;
   }
 }
 
@@ -106,22 +108,21 @@
     position: relative;
     width: 450px;
     margin: 0;
-    padding-bottom: 75px;
   }
 }
 
 .achievements__inner {
-  padding: 27px 20px 31px 20px;
+  padding: 26px 20px 40px 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 30px 1px;
+    padding: 34px 30px 83px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 110px;
+    padding: 55px 110px 70px 110px;
   }
 }
