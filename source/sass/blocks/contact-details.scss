@@ -192,16 +192,14 @@
   &:focus:invalid {
     stroke: #ff8282;
   }
-
 }
 
 input {
-
-    &:focus-visible + .contact-details__icon-phone {
-      stroke: #ff8282;
-    }
-
-    &:focus-visible + .contact-details__icon-email {
-      stroke: #ff8282;
-    }
+  &:focus-visible + .contact-details__icon-phone {
+    stroke: #ff8282;
   }
+
+  &:focus-visible + .contact-details__icon-email {
+    stroke: #ff8282;
+  }
+}
