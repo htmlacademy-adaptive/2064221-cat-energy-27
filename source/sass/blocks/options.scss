@@ -1,4 +1,4 @@
-.options__wrapper {
+.options {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: nowrap;
@@ -13,7 +13,7 @@
   }
 }
 
-.options {
+.options__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
