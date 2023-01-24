@@ -15,9 +15,9 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body">
+<body class="page__body nojs">
   <header class="main-header container">
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed">
       <div class="main-nav__container">
         <a class="main-header__logo" href="index.html">
           <picture>
@@ -51,125 +51,125 @@
   <main class="main-form">
     <section class="program-selection container">
       <div class="program-selection__wrapper">
-        <div class="program-selection__paragraf-wrapper">
-          <h1 class="program-selection__title">Подбор программы</h1>
-          <p class="program-selection__text">
-            Заполните анкету, и мы подберем<br>программу питания для вашего
-            кота
-          </p>
-        </div>
-        <div class="program-selection__box">
-          <div class="program-selection__questionnaire">
-            <div class="program-selection__form">
-              <form class="form" action="/">
-                <p class="form__wrapper">
+        <form class="program-selection__form">
+          <div class="program-selection__paragraf-wrapper">
+            <h1 class="program-selection__title">Подбор программы</h1>
+            <p class="program-selection__text">
+              Заполните анкету, и мы подберем<br>программу питания для вашего
+              кота
+            </p>
+          </div>
+          <div class="program-selection__box container">
+            <div class="program-selection__desktop">
+            <div class="program-selection__questionnaire">
+              <div class="program-selection__form">
+                <p class="program-selection__form form">
                   <label class="form__name" for="name-cat">имя:<sup>*</sup></label>
                   <input class="form__search" type="text" name="name" placeholder="барсик" id="name-cat">
                 </p>
-                <p class="form__wrapper">
+                <p class="program-selection__form form">
                   <label class="form__name" for="weight-cat">вес(кг):<sup>*</sup></label>
                   <input class="form__search" type="number" name="weight" placeholder="7" id="weight-cat">
                 </p>
-                <p class="form__wrapper form__wrapper--after">
+                <p class="program-selection__form form form--after">
                   <label class="form__name" for="age-cat">возраст(лет):</label>
                   <input class="form__search" type="number" name="age" placeholder="7" id="age-cat">
                 </p>
-              </form>
+              </div>
+            </div>
+            <div class="choise-program">
+              <fieldset class="choise-program__wrapper">
+                <ul class="choise-program__list">
+                  <li class="choise-program__item">
+                    <input class="visually-hidden choise-program__input" type="radio" name="goal" value="slim" id="slim"
+                      checked="checked">
+                    <label class="choise-program__label" for="slim">Похудение</label>
+                  </li>
+                  <li class="choise-program__item">
+                    <input class="visually-hidden choise-program__input" type="radio" name="goal" value="pro" id="pro">
+                    <label class="choise-program__label" for="pro">Набор массы</label>
+                  </li>
+                  <li class="choise-program__item">
+                    <input class="visually-hidden choise-program__input" type="radio" name="goal" value="dont-know"
+                      id="dont-know">
+                    <label class="choise-program__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             </div>
           </div>
-          <div class="choise-program">
-            <fieldset class="choise-program__wrapper">
-              <ul class="choise-program__list">
-                <li class="choise-program__item">
-                  <input class="visually-hidden choise-program__input" type="radio" name="goal" value="slim" id="slim"
+          <div class="program-selection__box contact-details container">
+            <div class="contact-details__box">
+              <h2 class="contact-details__title">
+                <span class="contact-details__background">Контактные данные (владельца кота)</span>
+              </h2>
+              <div class="contact-details__wrapper">
+                <div class="contact-details__paragraf-box">
+                  <label class="contact-details__label" for="email">e-mail:*</label>
+                  <input class="contact-details__input" id="email" type="email" name="email"
+                    placeholder="kuklachev@gmail.com" required>
+                  <svg class="contact-details__icon-email" fill="none">
+                    <use xlink:href="img/sprite.svg#email"></use>
+                  </svg>
+                </div>
+                <div class="contact-details__paragraf-box">
+                  <label class="contact-details__label" for="phone">телефон:*</label>
+                  <input class="contact-details__input" id="phone" type="tel" name="phone"
+                    placeholder="8 (960) 900-60-90" required>
+                  <svg class="contact-details__icon-phone" fill="none">
+                    <use xlink:href=" img/sprite.svg#phone"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="program-selection__box comment container">
+            <div class="comment__container">
+              <h3 class="comment__title"><span class="comment__background">Комментарий</span></h3>
+              <div class="comment__area">
+                <textarea class="comment__area-text" id="text" name="comment"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="program-selection__box additionally container">
+            <fieldset class="additionally__wrapper">
+              <legend class="visually-hidden">
+                Дополнительные товары. Не обязательные для выбора
+              </legend>
+              <h2 class="additionally__title"><span class="additionally__background">Дополнительно</span></h2>
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="other" id="sweeteners"
                     checked="checked">
-                  <label class="choise-program__label" for="slim">Похудение</label>
+                  <label class="additionally__label" for="sweeteners">Сахарозаменитель
+                  </label>
                 </li>
-                <li class="choise-program__item">
-                  <input class="visually-hidden choise-program__input" type="radio" name="goal" value="pro" id="pro">
-                  <label class="choise-program__label" for="pro">Набор массы</label>
+                <li class="additionally__item">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="other" id="water">
+                  <label class="additionally__label" for="water">Питьевая вода
+                  </label>
                 </li>
-                <li class="choise-program__item">
-                  <input class="visually-hidden choise-program__input" type="radio" name="goal" value="dont-know"
-                    id="dont-know">
-                  <label class="choise-program__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+                <li class="additionally__item">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="other" id="milk">
+                  <label class="additionally__label" for="milk">Молоко
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="other" id="vitamins">
+                  <label class="additionally__label" for="vitamins">Витамины
+                  </label>
                 </li>
               </ul>
             </fieldset>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact-details container">
-      <div class="contact-details__box">
-        <h2 class="contact-details__title">
-          <span class="contact-details__background">Контактные данные (владельца кота)</span>
-        </h2>
-        <div class="contact-details__wrapper">
-          <div class="contact-details__paragraf-box">
-            <label class="contact-details__label" for="email">e-mail:*</label>
-            <input class="contact-details__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com"
-              required>
-            <svg class="contact-details__icon-email" fill="none">
-              <use xlink:href="img/sprite.svg#email"></use>
-            </svg>
-          </div>
-          <div class="contact-details__paragraf-box">
-            <label class="contact-details__label" for="phone">телефон:*</label>
-            <input class="contact-details__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
-              required>
-            <svg class="contact-details__icon-phone" fill="none">
-              <use xlink:href=" img/sprite.svg#phone"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="comment container">
-      <div class="comment__container">
-        <h3 class="comment__title"><span class="comment__background">Комментарий</span></h3>
-        <div class="comment__area">
-          <textarea class="comment__area-text" id="text" name="comment"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
-      </div>
-    </section>
-    <section class="additionally container">
-      <fieldset class="additionally__wrapper">
-        <legend class="visually-hidden">
-          Дополнительные товары. Не обязательные для выбораю
-        </legend>
-        <h2 class="additionally__title"><span class="additionally__background">Дополнительно</span></h2>
-        <ul class="additionally__list">
-          <li class="additionally__item">
-            <input class="visually-hidden additionally__input" type="checkbox" name="other" id="sweeteners"
-              checked="checked">
-            <label class="additionally__label" for="sweeteners">Сахарозаменитель
-            </label>
-          </li>
-          <li class="additionally__item">
-            <input class="visually-hidden additionally__input" type="checkbox" name="other" id="water">
-            <label class="additionally__label" for="water">Питьевая вода
-            </label>
-          </li>
-          <li class="additionally__item">
-            <input class="visually-hidden additionally__input" type="checkbox" name="other" id="milk">
-            <label class="additionally__label" for="milk">Молоко
-            </label>
-          </li>
-          <li class="additionally__item">
-            <input class="visually-hidden additionally__input" type="checkbox" name="other" id="vitamins">
-            <label class="additionally__label" for="vitamins">Витамины
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <div class="additionally__button-wrapper">
-        <button class="additionally__send button" type="submit">
-          Отправить заявку
-        </button>
-        <p class="additionally__legend">*— Обязательные поля</p>
-      </div>
+            <div class="additionally__button-wrapper">
+              <button class="additionally__send button" type="submit">
+                Отправить заявку
+              </button>
+              <p class="additionally__legend">*— Обязательные поля</p>
+            </div>
+        </form>
     </section>
   </main>
   <footer class="main-footer">
@@ -191,7 +191,6 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
         width="766" height="560" allowfullscreen
         title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-      <div class="main-footer__iframe-pin"></div>
     </div>
     <div class="main-footer__container">
       <div class="main-footer__top main-footer__top--form container">

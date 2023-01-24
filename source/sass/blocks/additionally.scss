@@ -5,14 +5,14 @@
 .additionally__wrapper {
   border: none;
   margin: 0;
-  padding: 13px 20px 13px;
+  padding: 15px 20px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 67px 0 70px;
+    padding: 33px 67px 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 17px 110px 36px;
+    padding: 21px 110px 36px;
   }
 }
 
@@ -68,6 +68,7 @@
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+  text-transform: none;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -120,6 +121,7 @@
   text-align: center;
   margin: 0;
   color: #000000;
+  text-transform: none;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -132,16 +134,16 @@
 }
 
 .additionally__button-wrapper {
-  padding: 0 20px 32px;
+  padding: 0 20px 17px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    padding: 16px 67px 72px 70px;
+    padding: 16px 67px 58px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 110px 82px;
+    padding: 30px 110px 69px;
   }
 }
 

@@ -17,7 +17,7 @@
   }
 }
 
-.program-selection__box {
+.program-selection__desktop {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -41,10 +41,13 @@
 }
 
 .program-selection__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   margin: 0 0 37px;
+  color: #000000;
+  text-transform: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;

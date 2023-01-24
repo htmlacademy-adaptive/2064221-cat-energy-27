@@ -97,4 +97,12 @@
   .main-nav--closed .site-list__item {
     display: none;
   }
+
+  .nojs .site-list__item {
+    display: block;
+  }
+}
+
+.nojs .main-nav__toggle {
+  opacity: 0;
 }
