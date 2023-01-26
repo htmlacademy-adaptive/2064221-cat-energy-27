@@ -89,6 +89,7 @@
 
 .selection-program__inner-slim {
   display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

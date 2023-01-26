@@ -51,7 +51,7 @@
   <main class="main-form">
     <section class="program-selection container">
       <div class="program-selection__wrapper">
-        <form class="program-selection__form">
+        <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="program-selection__paragraf-wrapper">
             <h1 class="program-selection__title">Подбор программы</h1>
             <p class="program-selection__text">
@@ -61,42 +61,43 @@
           </div>
           <div class="program-selection__box container">
             <div class="program-selection__desktop">
-            <div class="program-selection__questionnaire">
-              <div class="program-selection__form">
-                <p class="program-selection__form form">
-                  <label class="form__name" for="name-cat">имя:<sup>*</sup></label>
-                  <input class="form__search" type="text" name="name" placeholder="барсик" id="name-cat">
-                </p>
-                <p class="program-selection__form form">
-                  <label class="form__name" for="weight-cat">вес(кг):<sup>*</sup></label>
-                  <input class="form__search" type="number" name="weight" placeholder="7" id="weight-cat">
-                </p>
-                <p class="program-selection__form form form--after">
-                  <label class="form__name" for="age-cat">возраст(лет):</label>
-                  <input class="form__search" type="number" name="age" placeholder="7" id="age-cat">
-                </p>
+              <div class="program-selection__questionnaire">
+                <div class="program-selection__form">
+                  <p class="program-selection__form form">
+                    <label class="form__name" for="name-cat">имя:<sup>*</sup></label>
+                    <input class="form__search" type="text" name="name" placeholder="барсик" id="name-cat" required>
+                  </p>
+                  <p class="program-selection__form form">
+                    <label class="form__name" for="weight-cat">вес(кг):<sup>*</sup></label>
+                    <input class="form__search" type="number" name="weight" placeholder="7" id="weight-cat" required>
+                  </p>
+                  <p class="program-selection__form form form--after">
+                    <label class="form__name" for="age-cat">возраст(лет):</label>
+                    <input class="form__search" type="number" name="age" placeholder="7" id="age-cat">
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="choise-program">
-              <fieldset class="choise-program__wrapper">
-                <ul class="choise-program__list">
-                  <li class="choise-program__item">
-                    <input class="visually-hidden choise-program__input" type="radio" name="goal" value="slim" id="slim"
-                      checked="checked">
-                    <label class="choise-program__label" for="slim">Похудение</label>
-                  </li>
-                  <li class="choise-program__item">
-                    <input class="visually-hidden choise-program__input" type="radio" name="goal" value="pro" id="pro">
-                    <label class="choise-program__label" for="pro">Набор массы</label>
-                  </li>
-                  <li class="choise-program__item">
-                    <input class="visually-hidden choise-program__input" type="radio" name="goal" value="dont-know"
-                      id="dont-know">
-                    <label class="choise-program__label" for="dont-know">Не знаю (нужен ваш совет)</label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+              <div class="choise-program">
+                <fieldset class="choise-program__wrapper">
+                  <ul class="choise-program__list">
+                    <li class="choise-program__item">
+                      <input class="visually-hidden choise-program__input" type="radio" name="goal" value="slim"
+                        id="slim" checked="checked">
+                      <label class="choise-program__label" for="slim">Похудение</label>
+                    </li>
+                    <li class="choise-program__item">
+                      <input class="visually-hidden choise-program__input" type="radio" name="goal" value="pro"
+                        id="pro">
+                      <label class="choise-program__label" for="pro">Набор массы</label>
+                    </li>
+                    <li class="choise-program__item">
+                      <input class="visually-hidden choise-program__input" type="radio" name="goal" value="dont-know"
+                        id="dont-know">
+                      <label class="choise-program__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
           </div>
           <div class="program-selection__box contact-details container">
@@ -148,7 +149,7 @@
                 </li>
                 <li class="additionally__item">
                   <input class="visually-hidden additionally__input" type="checkbox" name="other" id="water">
-                  <label class="additionally__label" for="water">Питьевая вода
+                  <label class="additionally__label" for="water">Питьевая&nbsp;вода
                   </label>
                 </li>
                 <li class="additionally__item">
@@ -169,7 +170,9 @@
               </button>
               <p class="additionally__legend">*— Обязательные поля</p>
             </div>
+          </div>
         </form>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
